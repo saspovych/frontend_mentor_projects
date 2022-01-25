@@ -1,0 +1,141 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	display: flex;
+	padding: 5px;
+
+	border-radius: 25px;
+	background-color: #151932;
+	list-style-type: none;
+}
+
+li {
+	padding: 5px 15px;
+
+	border-radius: 25px;
+
+	font-size: 11px;
+	font-weight: 800;
+	color: #545871;
+
+	cursor: pointer;
+}
+
+li:hover {
+	background-color: rgb(248,112,111, 0.6);
+	color: #6e2c3e;
+}
+
+li.active {
+	background-color: #F67171;
+
+	color: #6e2c3e;
+}
+
+li:not(:last-child) {
+	margin-right: 5px;
+}
+
+body {
+	height: 100vh;
+
+	font-family: "Poppins", sans-serif;
+
+	background-color: #1E2140;
+}
+
+.pomodoro_wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 90%;
+}
+
+.progress_bar_wrapper {
+	display: grid;
+	height: 300px;
+	width: 300px;
+
+	border-radius: 50%;
+	background-color: #1E2140;
+	box-shadow: -80px -20px 80px 0px #262b55, 80px 20px 80px 0px #141835;
+
+	place-items: center;
+}
+
+.progress_bar_shadow {
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+
+	border-radius: 50%;
+	box-shadow: 10px 10px 80px 20px #292d52 inset,
+}
+
+.progress_bar {
+	position: relative;
+
+	display: grid;
+	height: 100%;
+	width: 100%;
+
+	background: #F67171;
+	border-radius: 50%;
+
+	place-items: center;
+}
+
+.progress_bar::before {
+	content: "";
+
+	position: absolute;
+
+	height: 95%;
+	width: 95%;
+
+	background-color: #1E2140;
+	border-radius: 50%;
+}
+
+.time_value {
+	position: relative;
+
+	font-size: 76px;
+	font-weight: 700;
+	color: #d5e0fe;
+}
+
+.play_pause {
+	position: absolute;
+	bottom: 20%;
+	left: 55%;
+	transform: translate(-55%, -20%);
+
+	border: none;
+	outline: none;
+	background: none;
+
+	font-size: 18px;
+	letter-spacing: 15px;
+	color: #d5e0fe;
+
+	cursor: pointer;
+}
+
+.title {
+	margin-top: 50px;
+
+	color: #ced3ee;
+}
+
+.settings_icon {
+	color: #ced3ee;
+
+	cursor: pointer;
+}
