@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Pomodoro App</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../styles/style.css">
+	</head>
+	<body>
+		<div class="pomodoro_wrapper">
+			<h1 class="title">pomodoro</h1>
+			<div class="pomodoro_modes">
+				<ul>
+					<li id="pomodoro_mode" class="active">pomodoro</li>
+					<li id="short_break_mode">short break</li>
+					<li id="long_break_mode">long break</li>
+				</ul>
+			</div>
+			<div class="progress_bar_wrapper">
+				<div class="progress_bar_shadow">
+					<div class="progress_bar">
+						<div class="time_value">25:00</div>
+						<button class="play_pause">PLAY</button>
+					</div>
+				</div>
+			</div>
+			<div class="settings">
+				<i class="settings_icon fas fa-cog"></i>
+				<div class="modal">
+					<div class="modal_settings">
+						<div class="modal_settings_title">
+							<h2 class="settings_title">Settings</h2>
+							<span class="settings_close">X</span>
+						</div>
+						<div class="modal_settings_time">
+							<h3 class="time_title">TIME (MINUTES)</h3>
+							<div class="modal_settings_inputs">
+								<label class="pomodoro" for="pomodoro">pomodoro</label>
+								<label class="short_break" for="short_break">short break</label>
+								<label class="long_break" for="long_break">long break</label>
+								<input id="pomodoro" type="number" value="25">
+								<input id="short_break" type="number" value="5">
+								<input id="long_break" type="number" value="15">
+							</div>
+						</div>
+						<div class="modal_settings_font">
+							<h3 class="font_title">FONT</h3>
+							<div class="font_type">
+								<ul>
+									<li class="poppins active">Aa</li>
+									<li class="pt_sans">Aa</li>
+									<li class="oswald">Aa</li>
+								</ul>
+							</div>
+						</div>
+						<div class="modal_settings_color">
+							<h3 class="color_title">COLOR</h3>
+							<div class="color_type">
+								<ul>
+									<li class="red active"></li>
+									<li class="skyblue"></li>
+									<li class="purple"></li>
+								</ul>
+							</div>
+						</div>
+						<div class="modal_settings_apply">
+							<button class="apply">Apply</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../scripts/main.js"></script>
+	</body>
+</html>
