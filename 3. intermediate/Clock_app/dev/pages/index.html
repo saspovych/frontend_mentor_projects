@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Clock APP</title>
+		<link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../styles/style.css">
+	</head>
+	<body>
+		<div class="main_screen">
+			<div class="wrapper">
+				<div class="clock_content_wrapper">
+					<div class="blockquote_generator">
+						<blockquote>
+							<p class="blockquote" id="blockquote"></p>
+							<p class="author" id="author"></p>
+						</blockquote>
+						<i class="new_quote fas fa-sync" id="new_quote"></i>
+					</div>
+					<div class="clock_details">
+						<div class="greetings">
+							<i class="sun far fa-sun"></i>
+							<i class="moon fas fa-moon"></i>
+							<spna class="greetings_text">GOOD MORNING, IT'S CURRENTLY</spna>
+						</div>
+						<div class="clock">11:37</div>
+						<div class="location"></div>
+					</div>
+				</div>
+				<div class="more_less_button">
+					<span>MORE</span>
+					<i class="chevron fas fa-chevron-circle-down"></i>
+				</div>
+			</div>
+		</div>
+		<div class="more_information_screen hidden">
+			<div class="wrapper">
+				<div class="more_information_block">
+					<h6 class="block_title">CURRENT TIMEZONE</h6>
+					<div id="current_timezone" class="block_content">Europe/London</div>
+				</div>
+				<div class="more_information_block">
+					<h6 class="block_title">DAY OF THE YEAR</h6>
+					<div id="day_of_the_year" class="block_content">295</div>
+				</div>
+				<div class="more_information_block">
+					<h6 class="block_title">DAY OF THE WEEK</h6>
+					<div id="day_of_the_week" class="block_content">5</div>
+				</div>
+				<div class="more_information_block">
+					<h6 class="block_title">WEEK NUMBER</h6>
+					<div id="week_number" class="block_content">42</div>
+				</div>
+			</div>
+		</div>
+		<script src="../scripts/main.js"></script>
+	</body>
+</html>
