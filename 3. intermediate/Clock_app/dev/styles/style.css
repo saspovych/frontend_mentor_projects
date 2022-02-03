@@ -7,7 +7,7 @@
 body {
 	height: 100vh;
 
-	background-image: url("../img/morning.jpg");
+	background-image: url("../img/Morning.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	backdrop-filter: brightness(70%);
